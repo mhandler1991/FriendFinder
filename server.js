@@ -30,6 +30,6 @@ require('./app/routing/htmlRoutes')(app);
 // Listener
 // *******************
 
-app.listen(PORt, function() {
+app.listen(PORT, function() {
     console.log("Listening on PORT: ", PORT);
 })
