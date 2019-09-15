@@ -22,7 +22,8 @@ module.exports = function (app) {
 
      // API POST
      app.post('/app/friends', function (req, res) {
-
+        res.json(true)
+        console.log(res);
      });
 
 }
