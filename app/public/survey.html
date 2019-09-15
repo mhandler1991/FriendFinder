@@ -137,6 +137,49 @@
             </select>
         </div>
 
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="bttnSubmit">Submit</button>
+
+        <!-- Match Info -->
+        <h2>Best Match</h2>
+        <h3 id="match-name"></h3>
+        <img id='match-img' src="" alt="">
+
 </body>
+
+<!-- Script JS Logic -->
+<script type="text/javascript"> 
+
+// On Click Submit
+$('#bttnSubmit').on('click', function() {
+    // Stop Standard on Click function
+    event.preventDefault();
+
+    // Capture User Data
+    var userInput = {
+        name: $('#nameInput').val(),
+        photo: $('#imageInput').val(),
+        scores: [
+            $('#Question1').val(),
+            $('#Question2').val(),
+            $('#Question3').val(),
+            $('#Question4').val(),
+            $('#Question5').val(),
+            $('#Question6').val(),
+            $('#Question7').val(),
+            $('#Question8').val(),
+            $('#Question9').val(),
+            $('#Question10').val(),
+        ]
+    };
+
+    // Post Data
+    $.post('/api/friends', userInput, function(data) {
+
+    })
+
+})
+
+
+</script>
 
 </html>
