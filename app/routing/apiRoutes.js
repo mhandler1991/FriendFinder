@@ -78,6 +78,8 @@ module.exports = function (app) {
             } else {}
 
             console.log('*************');
+            console.log('Result');
+            console.log('*************');
             console.log(bestmatch);
             console.log(bestmatchName);
             friendtotal = 0;
