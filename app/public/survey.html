@@ -18,7 +18,7 @@
 <body>
 
     <form>
-        
+
         <!-- Name -->
         <div class="form-group">
             <label for="nameInput">Name</label>
@@ -30,10 +30,10 @@
             <label for="imageInput">Image Link</label>
             <input class="form-control" id="imageInput" placeholder="">
         </div>
-        
+
         <!-- Question 1 -->
         <div class="form-group">
-            <label for="Question1"></label>
+            <label for="Question1">How strongly do you feel about the environment?</label>
             <select class="form-control" id="Question1">
                 <option>1</option>
                 <option>2</option>
@@ -44,7 +44,7 @@
         </div>
         <!-- Question 2 -->
         <div class="form-group">
-            <label for="Question2">Example select</label>
+            <label for="Question2">How afraid of heights are you?</label>
             <select class="form-control" id="Question2">
                 <option>1</option>
                 <option>2</option>
@@ -55,7 +55,7 @@
         </div>
         <!-- Question 3 -->
         <div class="form-group">
-            <label for="Question3">Example select</label>
+            <label for="Question3">How much do you like math?</label>
             <select class="form-control" id="Question3">
                 <option>1</option>
                 <option>2</option>
@@ -66,7 +66,7 @@
         </div>
         <!-- Question 4 -->
         <div class="form-group">
-            <label for="Question4">Example select</label>
+            <label for="Question4">How much do you like being outside?</label>
             <select class="form-control" id="Question4">
                 <option>1</option>
                 <option>2</option>
@@ -77,7 +77,7 @@
         </div>
         <!-- Question 5 -->
         <div class="form-group">
-            <label for="Question5">Example select</label>
+            <label for="Question5">How much do you like being inside?</label>
             <select class="form-control" id="Question5">
                 <option>1</option>
                 <option>2</option>
@@ -88,7 +88,7 @@
         </div>
         <!-- Question 6 -->
         <div class="form-group">
-            <label for="Question6">Example select</label>
+            <label for="Question6">Whats your favorite number from 1-5?</label>
             <select class="form-control" id="Question6">
                 <option>1</option>
                 <option>2</option>
@@ -99,7 +99,7 @@
         </div>
         <!-- Question 7 -->
         <div class="form-group">
-            <label for="Question7">Example select</label>
+            <label for="Question7">How strongly do you consider yourself a night person?</label>
             <select class="form-control" id="Question7">
                 <option>1</option>
                 <option>2</option>
@@ -110,7 +110,7 @@
         </div>
         <!-- Question 8 -->
         <div class="form-group">
-            <label for="Question8">Example select</label>
+            <label for="Question8">Do you like spending time on the computer?</label>
             <select class="form-control" id="Question8">
                 <option>1</option>
                 <option>2</option>
@@ -121,7 +121,7 @@
         </div>
         <!-- Question 9 -->
         <div class="form-group">
-            <label for="Question9">Example select</label>
+            <label for="Question9">Pick a number 1-5</label>
             <select class="form-control" id="Question9">
                 <option>1</option>
                 <option>2</option>
@@ -132,7 +132,7 @@
         </div>
         <!-- Question 10 -->
         <div class="form-group">
-            <label for="Question10">Example select</label>
+            <label for="Question10">Do you think questionaires like this work?</label>
             <select class="form-control" id="Question10">
                 <option>1</option>
                 <option>2</option>
@@ -145,16 +145,34 @@
         <button type="button" class="btn btn-primary btn-lg btn-block" id="bttnSubmit">Submit</button>
 
         <!-- Match Info -->
-        <h2>Best Match</h2>
-        <h3 id="match-name"></h3>
-        <img id='match-img' src="" alt="">
+        <div class="modal" tabindex="-1" role="dialog" id='result'>
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Your Best Match is:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 id='bestMatchName'></h1>
+                        <img src="" alt="" id='bestMatchImg'>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 </body>
 
 <!-- Script JS Logic -->
 <script type="text/javascript">
+
     // On Click Submit
     $('#bttnSubmit').on('click', function () {
+
         // Stop Standard on Click function
         event.preventDefault();
 
@@ -179,8 +197,17 @@
         // Post Data
         $.post('/api/friends', userInput, function (data) {
 
+            // Define Name of Best Match
+            var name = data.name;
+            // Define Picuture of Best Match
+            var image = data.photo;
+
+            // Populate in Model
+            $('#bestMatchName').text(name);
+            $('#bestMatchImg').attr('src',image);
+
             // Provide Response
-            alert(data);
+            $('#result').modal('toggle');
         })
 
     })

@@ -39,6 +39,8 @@ module.exports = function (app) {
         var bestmatch = 100;
         // Friend Score
         var friendtotal = 0;
+        // 
+        var bestMatchData = '';
 
         // Find User Total
         //****************
@@ -67,10 +69,14 @@ module.exports = function (app) {
 
             // Determine if this friend is the best match for the user
             if (dif < bestmatch) {
+
                 bestmatch = friendtotal;
                 bestmatchName = friends[i].name;
+                bestMatchData = friends[i];
                 friendtotal = 0;
+
             } else {}
+
             console.log('*************');
             console.log(bestmatch);
             console.log(bestmatchName);
@@ -79,7 +85,7 @@ module.exports = function (app) {
         }
 
         // Respond
-        res.json(bestmatchName)
+        res.json(bestMatchData)
 
     });
 
