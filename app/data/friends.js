@@ -4,8 +4,8 @@
 
 var friendsData = [
     {
-        name: 'Person 1',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        name: 'Mark T.',
+        photo: 'https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg',
         scores: [
             1,
             2,
@@ -21,7 +21,7 @@ var friendsData = [
     },
     {
         name: 'Person 2',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        photo: 'https://www.picmonkey.com/blog/wp-content/uploads/2016/11/1-intro-photo-final.jpg',
         scores: [
             3,
             1,
@@ -36,8 +36,8 @@ var friendsData = [
         ]
     },
     {
-        name: 'Person 3',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        name: 'Jonathan P.',
+        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH5VG9m1ylrb5mUhjEn1O8ct1ZLRou_HqGSiFK0V3wATXEHbF0Uw',
         scores: [
             3,
             3,
@@ -52,8 +52,8 @@ var friendsData = [
         ]
     },
     {
-        name: 'Person 4',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        name: 'Heather L.',
+        photo: 'https://cdn.the-scientist.com/assets/articleNo/65249/aImg/30053/profile-t.png',
         scores: [
             4,
             4,
@@ -68,8 +68,8 @@ var friendsData = [
         ]
     },
     {
-        name: 'Person 5',
-        photo: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg',
+        name: 'Jan M.',
+        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOBtmjFVqdH7DvFykMNYMm7GVMDsqzrU2nuOi975uaPH3dsiB',
         scores: [
             5,
             5,
