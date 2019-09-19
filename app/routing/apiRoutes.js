@@ -22,7 +22,7 @@ module.exports = function (app) {
 
     // API POST
     app.post('/api/friends', function (req, res) {
-        res.json(true)
+
         // Console Log User Input
         console.log("Request Body: ", req.body);
         console.log("Request Name: ", req.body.name);
@@ -79,6 +79,8 @@ module.exports = function (app) {
         }
 
         // Respond
+        res.json(bestmatchName)
+
     });
 
 }
