@@ -92,29 +92,3 @@ module.exports = function (app) {
     });
 
 }
-
-// * Convert each user's results into a simple array of numbers (ex: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`).
-// * With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the `totalDifference`.
-//   * Example:
-//     * User 1: `[5, 1, 4, 4, 5, 1, 2, 5, 4, 1]`
-//     * User 2: `[3, 2, 6, 4, 5, 1, 2, 5, 4, 1]`
-//     * Total Difference: **2 + 1 + 2 =** **_5_**
-// * Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both `5-3` and `3-5` as `2`, and so on.
-// * The closest match will be the user with the least amount of difference.
-
-// var userInput = {
-//     name: $('#nameInput').val(),
-//     photo: $('#imageInput').val(),
-//     scores: [
-//         $('#Question1').val(),
-//         $('#Question2').val(),
-//         $('#Question3').val(),
-//         $('#Question4').val(),
-//         $('#Question5').val(),
-//         $('#Question6').val(),
-//         $('#Question7').val(),
-//         $('#Question8').val(),
-//         $('#Question9').val(),
-//         $('#Question10').val(),
-//     ]
-// // };
