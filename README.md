@@ -21,6 +21,20 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 #### File Structure:
 
+```
+├── data
+│   ├── friends.js
+├── public
+│   ├── home.html
+│   ├── survey.html
+├── routing
+│   ├── apiRoutes.js
+│   ├── htmlRoutes.js
+├── .gitignore
+├── README.md
+├── server.js
+```
+
 
 
 #### Instructions: 
