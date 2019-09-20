@@ -1,41 +1,81 @@
 # Friend Finder
 
-Node.js & Express
+Node.js & Express Server
 
 Friend Finder is a Node.js/Express Server connected which allows users to complete a survey of ten questions and be prompted a response of their most suitable match/friend within the Friend Finder system.
 
+
+
+[TOC]
+
 #### Files Included:
-1. friends.js
-2. home.html
-3. survey.html
-4. apiRoutes.js
-5. htmlRoutes.js
-6. server.js
+
+1. **friends.js**: The systems included 'friends' data object referenced throughout.
+2. **home.html**: HTML Home page. 
+3. **survey.html**: HTML Survey page used to grab user input and submit to the server
+4. **apiRoutes.js**: Javascript Page used to route API Requests
+5. **htmlRoutes.js**: Javascript Page used to route HTML requests
+6. **server.js**: Node.js Express Server
 
 
-## Instructions:
-Please follow the below instructions to create/deploy:
 
-1. Clone the repository from Github found here: https://github.com/mhandler1991/FriendFinder
-2. Open console & install express
-    ```
-    npm i express
-    ```
-3. Run your Node server.js file
-4. Open your browser on the defined port and find your friend!
+#### File Structure:
 
 
-## Items of Note:
 
-Developed by M Handler
+#### Instructions: 
 
-### Integrations Used
+Please follow the provided instructions to create/deploy Friend Finder:
+
+1. Clone the repository from Github: https://github.com/mhandler1991/FriendFinder
+
+2. Install Express Dependency
+
+   ```javascript
+   npm i express
+   ```
+
+3. Run your Node Server.js file
+
+   ```javascript
+   node server.js
+   ```
+
+4. Open your browser on the defined port (PORT 3000 is the default port included) and find your friend!
+
+
+
+#### What did we use?
+
 - Node.js
 - Express
 
-### Packages Used
+
+
+#### Packages Used:
+
 - [Express](https://www.npmjs.com/package/express)
 
 
-## General Functionality:
 
+#### General Functionality
+
+Friend Finder is a Node.js/Express Server connected which allows users to complete a survey of ten questions and be prompted a response of their most suitable match/friend within the Friend Finder system.
+
+
+
+#### Contributors: 
+
+[Maxwell Handler](http://maxwellhandler.com/)
+
+
+
+#### License
+
+(The MIT License)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
