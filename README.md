@@ -39,14 +39,14 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 #### Friends Data Model
 
-| Name   | photo | scores                |
+| name   | photo | scores                |
 | ------ | ----- | --------------------- |
 | Jan M. | URL   | [5,4,3,2,1,0,4,3,2,4] |
 
 ```javascript
     {
         name: 'Jan M.',
-        photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOBtmjFVqdH7DvFykMNYMm7GVMDsqzrU2nuOi975uaPH3dsiB',
+        photo: 'https:...',
         scores: [
             5,
             5,
