@@ -47,18 +47,7 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
     {
         name: 'Jan M.',
         photo: 'https:...',
-        scores: [
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
-        ]
+        scores: [5,5,5,5,5,5,5,5,5,5]
     }
 ```
 
