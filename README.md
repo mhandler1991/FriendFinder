@@ -8,7 +8,7 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 [TOC]
 
-#### Files Included:
+## Files Included:
 
 1. **friends.js**: The systems included 'friends' data object referenced throughout.
 2. **home.html**: HTML Home page. 
@@ -19,7 +19,7 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 
 
-#### File Structure:
+## File Structure:
 
 ```
 ├── data
@@ -53,7 +53,7 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 
 
-#### Instructions: 
+## Instructions: 
 
 Please follow the provided instructions to create/deploy Friend Finder:
 
@@ -88,7 +88,7 @@ Please follow the provided instructions to create/deploy Friend Finder:
 
 
 
-#### General Functionality
+## General Functionality
 
 Friend Finder is a Node.js/Express Server connected which allows users to complete a survey of ten questions and be prompted a response of their most suitable match/friend within the Friend Finder system.
 
@@ -100,7 +100,7 @@ Friend Finder is a Node.js/Express Server connected which allows users to comple
 
 
 
-#### License
+## License
 
 (The MIT License)
 
